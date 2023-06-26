@@ -58,7 +58,7 @@ public:
         return *this;
     }
 
-    Array operator[](int index) const
+    int operator[](int index) const
     {
         if (index > size || index < 0)
         {
