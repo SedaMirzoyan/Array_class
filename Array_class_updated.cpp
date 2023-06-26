@@ -60,11 +60,6 @@ public:
 
     int operator[](int index) const
     {
-        if (index > size || index < 0)
-        {
-            throw std::logic_error("Out of range\n");
-        }
-        std::cout << "Element with value " << ptr[index] << " was returned\n";
         return ptr[index];
     }
 
