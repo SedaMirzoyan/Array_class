@@ -117,15 +117,15 @@ int main()
         std::cerr << e.what();
     }*/
 
-
-    try {
+   /* try {
         ob[3];
     }
     catch (const std::logic_error& e)
     {
         std::cerr << e.what();
-    }
+    }*/
 
+    ob[3];
     Array ob_cp(ob);
 
     Array ob1;
