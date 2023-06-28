@@ -58,7 +58,7 @@ public:
         return *this;
     }
 
-    int operator[](int index) const
+    int& operator[](int index) const
     {
         return ptr[index];
     }
@@ -126,6 +126,10 @@ int main()
     }*/
 
     ob[3];
+    ob[2] = 45;
+    std::cout << "After assignment\n";
+    ob.printArray();
+    
     Array ob_cp(ob);
 
     Array ob1;
